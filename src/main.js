@@ -2,6 +2,14 @@ import './style.css'
 import {age,descriptions,names,pictures,places,whoTookPictures} from './settings';
 
 const phone = document.getElementById("phone");
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  loginForm.style.display = "none";
+  phone.style.visibility = "visible";
+  OnePerson();
+})
 
 const OnePerson = () =>{
   let returnString = "";
@@ -20,6 +28,6 @@ const OnePerson = () =>{
   phone.innerHTML = returnString;
 }
 
-OnePerson()
+
 
 

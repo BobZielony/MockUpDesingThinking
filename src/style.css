@@ -1,4 +1,5 @@
 .phoneMockup{
+  visibility: collapse;
   border: 3px solid black;
   border-radius: 5px;
   height: 200vh;
@@ -35,4 +36,5 @@ p{
   position: absolute;
   top: 30%;
 }
+
 
