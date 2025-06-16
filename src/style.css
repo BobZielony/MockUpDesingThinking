@@ -1,0 +1,38 @@
+.phoneMockup{
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 200vh;
+}
+
+.photo{
+  width: 80vw;
+}
+
+.onePerson{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 120vw;
+}
+
+p{
+  color: white;
+  font-size: 2vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.imageText{
+  size: 100%;
+}
+
+.name{
+  position: absolute;
+  top: 5%;
+}
+
+.place{
+  position: absolute;
+  top: 30%;
+}
+
