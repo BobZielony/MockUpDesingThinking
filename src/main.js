@@ -1,5 +1,5 @@
 import './style.css'
-import {age,descriptions,names,pictures,places,whoTookPictures} from './settings';
+import {age,descriptions,names,pictures,places,whoTookPictures,religions,relationships} from './settings';
 
 const phone = document.getElementById("phone");
 const loginForm = document.getElementById("loginForm");
@@ -20,12 +20,16 @@ const OnePerson = () =>{
       <div class="imageText">
         <p class="name">${names[i]}, ${age[i]}</p>
         <p class="place">${places[i]}</p>
+        <p class="relationship">${relationships[i]}</p>
+        <p class="religion">${religions[i]}</p>
       </div>
-    </div>
+      <p class="description">${descriptions[i]}</p>
+      <button class="sendMessage">Wyślij wiadomość do: <span class="nameInButton">${names[i]}</span></button>
+      </div>
+    `;
     
-    `
   }
-  phone.innerHTML = returnString;
+  phone.innerHTML += returnString;
 }
 
 

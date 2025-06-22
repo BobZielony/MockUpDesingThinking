@@ -1,42 +1,52 @@
 @font-face {
   font-family: Chomsky;
-  src: url('../Chomsky.otf') format("opentype");
+  src: url('../BadGuy.otf') format("opentype");
 }
 
 .phoneMockup{
   visibility: collapse;
-  background-image: url('../teksturaGazety.webp');
+  background-image: url('../paperTexture.jpg');
+  background-repeat: round;
   border: 3px solid black;
   border-radius: 5px;
   height: 200vh;
 }
 
 .loginForm{
-  background-image: url('../teksturaGazety.webp');
+  background-image: url('../paperTexture.jpg');
+  background-repeat: round;
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
   height: 100vh;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   font-family: Chomsky;
 }
 
+.photo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .loginForm > h2{
   text-align: center;
+  font-size: 3em;
 }
+
 .loginForm > input[type=submit]{
+  font-family: Chomsky;
   margin-top: 10%;
 }
 
 .loginForm > label,input{
+  font-size: 2em;
   display: block;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  border-radius: 10px;
   width: 90%;
 }
-
 
 .photo{
   width: 80vw;
@@ -63,11 +73,62 @@ p{
 .name{
   position: absolute;
   top: 5%;
+  left: 10%;
 }
 
 .place{
   position: absolute;
-  top: 30%;
+  font-size: 1.7em;
+  top: 20%;
+  left: 10%;
 }
 
+.religion{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
 
+.relationship{
+  position: absolute;
+  top: 37%;
+  left: 10%;
+  font-size: 0.9em;
+}
+
+.description{
+  text-align: center;
+}
+
+.photo{
+  border-radius: 8px;
+}
+
+.sendMessage{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 33vw;
+  background-color: #f2f3c0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.nameInButton{
+  font-weight: bold;
+}
+
+.navList{
+  height: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navList>li>img{
+  height: 100%;
+  width: 100%;
+}
