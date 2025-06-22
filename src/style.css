@@ -1,18 +1,18 @@
 @font-face {
   font-family: Chomsky;
-  src: url('../public/Chomsky.otf');
+  src: local('./Chomsky.otf');
 }
 
 .phoneMockup{
   visibility: collapse;
-  background-image: url('../public/teksturaGazety.webp');
+  background-image: local('./teksturaGazety.webp');
   border: 3px solid black;
   border-radius: 5px;
   height: 200vh;
 }
 
 .loginForm{
-  background-image: url('../public/teksturaGazety.webp');
+  background-image: local('./teksturaGazety.webp');
   margin-left: auto;
   margin-right: auto;
   width: 80vw;
