@@ -1,18 +1,18 @@
 @font-face {
   font-family: Chomsky;
-  src: url('../../AplikacjaDziabko/public/Chomsky.otf') format("opentype");
+  src: url('../Chomsky.otf') format("opentype");
 }
 
 .phoneMockup{
   visibility: collapse;
-  background-image: url('../../AplikacjaDziabko/public/teksturaGazety.webp');
+  background-image: url('../teksturaGazety.webp');
   border: 3px solid black;
   border-radius: 5px;
   height: 200vh;
 }
 
 .loginForm{
-  background-image: url('../../AplikacjaDziabko/public/teksturaGazety.webp');
+  background-image: url('../teksturaGazety.webp');
   margin-left: auto;
   margin-right: auto;
   width: 80vw;
