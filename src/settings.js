@@ -1,4 +1,4 @@
-export const pictures = ['./odGuy.jpg','./oldGuy1.jpg','./oldWoman.jpg','./oldWoman2.jpg'];
+export const pictures = ['./oldGuy.jpg','./oldGuy1.jpg','./oldWoman.jpg','./oldWoman2.jpg'];
 
 export const whoTookPictures = ['Image by Gerd Altmann from Pixabay','Image by Gerd Altmann from Pixabay','Image by Gerd Altmann from Pixabay','Image by Thangphan from Pixabay']
 
