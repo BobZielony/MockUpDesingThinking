@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="./icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js"></script>
     <title>Aplikacja dla osób starszych</title>
   </head>
   <body>
-    <script type="module" src="/src/main.js"></script>
+    
     <form class="loginForm" id="loginForm">
         <h2>Tu sie zaloguj!</h2>
-        <label for="username">Login (nazwa)</label>
+        <label for="username">Login (nazwa twojego konta)</label>
         <input type="text" id="username" name="username">
-        <label for="password">Haslo</label>
+        <label for="password">Haslo (twojego konta)</label>
         <input type="password" id="password" name="password">
         <input type="submit" value="Przeslij">
     </form>
     <div class="phoneMockup" id="phone">
       <nav>
         <ul class="navList">
-          <li><img src="./home.png"></li>
-          <li><img src="./friends.png"></li>
-          <li><img src="./message.png"></li>
-          <li><img src="./noti.png"></li>
+          <li><input type="image" src="./home.png"></li>
+          <li><input type="image" src="./friends.png"></li>
+          <li><input type="image" id="messageBoxButton" src="./message.png"></li>
+          <li><input type="image" src="./noti.png"></li>
         </ul>
       </nav>
+    </div>
+    <div class="messageBox" id="messageBox">
+
     </div>
   </body>
 </html>

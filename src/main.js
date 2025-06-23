@@ -3,12 +3,21 @@ import {age,descriptions,names,pictures,places,whoTookPictures,religions,relatio
 
 const phone = document.getElementById("phone");
 const loginForm = document.getElementById("loginForm");
+const messageBox = document.getElementById("messageBox");
+const messageBoxButton = document.getElementById("messageBoxButton");
+
+
 
 loginForm.addEventListener("submit",(e)=>{
   e.preventDefault();
   loginForm.style.display = "none";
-  phone.style.visibility = "visible";
+  phone.style.display = "block"
   OnePerson();
+})
+
+messageBoxButton.addEventListener("click",(e)=>{
+  e.preventDefault();
+  phone.style.display = "none";
 })
 
 const OnePerson = () =>{
@@ -25,12 +34,14 @@ const OnePerson = () =>{
       </div>
       <p class="description">${descriptions[i]}</p>
       <button class="sendMessage">Wyślij wiadomość do: <span class="nameInButton">${names[i]}</span></button>
-      </div>
+    </div>
     `;
     
   }
   phone.innerHTML += returnString;
 }
+
+
 
 
 

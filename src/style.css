@@ -4,7 +4,7 @@
 }
 
 .phoneMockup{
-  visibility: collapse;
+  display: none;
   background-image: url('../paperTexture.jpg');
   background-repeat: round;
   border: 3px solid black;
@@ -38,6 +38,10 @@
   margin-top: 10%;
 }
 
+.loginForm>input[type=text],input[type=password]{
+  background-color: #f2f3c0;
+}
+
 .loginForm > label,input{
   font-size: 2em;
   display: block;
@@ -53,11 +57,13 @@
 }
 
 .onePerson{
+  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 120vw;
 }
+
+
 
 p{
   color: white;
@@ -126,9 +132,30 @@ p{
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5%;
 }
 
-.navList>li>img{
+.navList>li>input[type=button]{
   height: 100%;
   width: 100%;
+}
+
+.navList>li>input[type=button]:hover{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+nav{
+  margin-bottom: 5%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.messageBox{
+  display: none;
 }
